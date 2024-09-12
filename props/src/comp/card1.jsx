@@ -1,5 +1,5 @@
 import React from "react";
-function Card1({now}){
+function Card1({now,when,where=" everywhere"}){
     return(
         <>
         <div>
@@ -12,7 +12,10 @@ function Card1({now}){
         </h2>
       
         <h1>
-            where
+            {where}
+        </h1>
+        <h1>
+            {when || "yes"}
         </h1>
         </div>
         <hr/>
