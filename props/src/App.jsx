@@ -15,6 +15,7 @@ function App() {
 
 //we can also call these var directly
 //in last 3 statements the  whole card is same but now var is changing we have used a var parameter in Card1 fn which is being called from here.....
+// we can also call objects or arrays but not directly first we have to store them in a new variable...
   return (
     <>
       <h1>PROPS</h1>
