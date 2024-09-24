@@ -22,6 +22,23 @@ function App() {
     //  @tailwind components;
     //  @tailwind utilities;
 
+
+    /*import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from "tailwindcss";
+// https://vitejs.dev/config/
+
+export default defineConfig({
+  plugins: [react()],
+  css:{
+    postcss:{
+      plugins:[tailwindcss()],
+    }
+  }
+})
+*/
+//write this in vite.config.js......
+
     // tailwind is ready to use
   return (
     <>
