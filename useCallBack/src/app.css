@@ -9,7 +9,7 @@
     -webkit-background-clip: text;
     color:transparent;
     padding-bottom: 8px;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgba(73, 65, 65, 0.575);
 }
 h2{
    padding-top: 30px;
