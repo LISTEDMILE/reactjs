@@ -60,10 +60,11 @@ import useCurrencyInfo from './hooks/firsthook.js'
                       >
                           <div className="w-full mb-1">
                               <InputBox
+                              
                                   label="From"
                                   amount={amount}
                                   currencyOption={options}
-                                  onCurrencyChange={(currency)=> setAmount(amount)}
+                                  onCurrencyChange={(currency)=> selectCurrency(currency)}
                                   selectCurrency={from}
                                   onAmountChange={(amount) => setAmount(amount)}
                               />
@@ -82,8 +83,10 @@ import useCurrencyInfo from './hooks/firsthook.js'
                                   label="To"
                                   amount={convertedAmount}
                                   currencyOption={options}
-                                  onCurrencyChange={(currency)=>setTo(currency)}
-                                  selectCurrency={from}
+                                  onCurrencyChange={(currency)=>setTo(currency)
+                                
+                                   }
+                                  selectCurrency={to}
                                   amountDisable
                               />
                           </div>
