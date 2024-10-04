@@ -1,3 +1,16 @@
 #background{
     background-image: url("image.jpg");
 }
+#input{
+    border:2px solid rgba(4, 71, 60, 0.219);
+    margin:6px 0px;
+    border-radius: 8px;
+}
+#input input{
+    text-align: center;
+}
+option{
+    background-color: white;
+    color:black;
+    
+}
