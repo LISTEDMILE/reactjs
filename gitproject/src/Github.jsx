@@ -1,7 +1,7 @@
 
 import './git.css'
 import React, { useState , useEffect} from "react";
-export default function(){
+ function Git(){
     const [follow,setFollow] = useState([]);
     const [a,setA] = useState("");
     useEffect(()=>{
@@ -11,6 +11,12 @@ export default function(){
     },[a]);
 
     return(<>
+
+    <header>
+    <div>LOGO</div>
+    <div><h1> GET GITHUB INFO</h1></div>
+    <div id="div2"><a>ABOUT</a><a>Help</a><a>Contact Us</a></div>
+    </header>
     
     <div className="flex  justify-center">
        <div> Enter any profile:
@@ -61,3 +67,5 @@ export default function(){
 </>
     )
 }
+
+export default Git
