@@ -18,6 +18,12 @@ function App() {
 
   //  useParam() method used when we want ki hm url change karte time jo url ke aage wali value h usko ek var me import bhi karle
   //  in user.jsx we wrote a program to import a value from url   in main.jsx user is the path which is given to nav link of Header and /:something means somethng will contain the value provided with the navlink with the same syntax  and it will go to user.jsx.......
+
+  //  loader is a hook used to load or fetch api content or any data before starting for ex here on hovering on github link the api is fetched and on click there is no delay for fetching .
+  //  here in home.jsx we stored value of input into the a var then we have exprted it through a const to the main.jsx there on route tag or function we added an attribute loader={name of the const} so now the api is loaded to the loader
+  //  now to use this api we go to the github file there we imported useLoaderData and stored all the things in follow var which can now be directly used..........
+
+  
   return (
     <>
    <Header/>
