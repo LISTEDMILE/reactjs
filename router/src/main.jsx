@@ -2,6 +2,7 @@
 import { createRoot } from 'react-dom/client'
 import App from './Layout.jsx'
 import './index.css'
+import { gitLoad } from './components/home/Home.jsx'
 import { Route } from 'react-router-dom'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import { StrictMode } from 'react'
@@ -49,7 +50,8 @@ const router1 = createBrowserRouter([{
             <Route path='about' element={<About/>}/>
             <Route path='contact' element={<Contact/>}/>
             <Route path='user/:userid' element={<User/>}/>
-            <Route path='github' element={<Github/>}/>
+            <Route path='github' element={<Github/>}
+            loader={gitLoad} />
         </Route>
     ))
 

@@ -19,7 +19,7 @@ import React, { useState , useEffect} from "react";
     </header>
     
     <div className="flex  justify-center">
-       <div> Enter any profile:
+       <div> <span className='text-white'>Enter any profile:</span>
         <input className='mx-8 my-4 mr-16  bg-slate-300 text-black p-2 text-center' 
         placeholder='git username' 
         onChange={(e)=>{setA(e.target.value);}}/>
