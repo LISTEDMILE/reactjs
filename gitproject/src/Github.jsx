@@ -1,4 +1,4 @@
-import logo1 from './Logo.png'
+import logo1 from './Image1/Logo.png'
 import image1 from './Image1/Profile.png'
 import './git.css'
 import React, { useState , useEffect} from "react";
