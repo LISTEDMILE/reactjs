@@ -1,11 +1,14 @@
 import React from 'react'
 import {useState} from 'react'
 import {Link} from 'react-router-dom' 
-const [a,setA] = useState("");
-export default function Home() {
+
+
+const [a,setA] = useState("listedmile");
+ 
+
+export default function Home({a}) {
 
     
- 
     return (
 
         <div className="mx-auto w-full max-w-7xl">
@@ -61,6 +64,7 @@ export default function Home() {
 }
 
 export const gitLoad = async ({a}) => {
+   console.log(a)
     const Response = await fetch(`https://api.github.com/users/${a}`)
     return Response.json()
 }

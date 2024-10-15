@@ -55,7 +55,7 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos))
   },[todos])
   
-  return (
+  return (<>
     <TodoProvider value={{todos, addTodo,updatedTodo,deleteTodo,toggleComplete}}>
       <header>
         <div id="img2">
@@ -83,6 +83,16 @@ function App() {
                 </div>
             </div>
     </TodoProvider>
+
+    <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+        <div class="circle" id="circle5"></div>
+        <div class="circle" id="circle6"></div>
+        <div class="circle" id="circle7"></div>
+        <div class="circle" id="circle8"></div>
+    </>
   )
 }
 
